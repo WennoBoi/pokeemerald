@@ -1035,3 +1035,20 @@ LittlerootTown_Text_1E8DA2: @ 81E8DA2
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+Script_Custom1::
+	msgbox Text_Custom1, MSGBOX_NPC
+	end
+
+Text_Custom1:
+	.string "Hey, uh, I'm ADAM.\p"
+	.string "ADAM: I think I'm lost...\n"
+	.string "I was flying to the CORBA region, but\l"
+	.string "I ended up here.\p"
+	.string "ADAM: So, uh, where are we?\p"
+	.string "ADAM: ...\p"
+	.string "ADAM: ... LITTLEROOT? In the HOENN\n"
+	.string "region? Are you nuts?!\p"
+	.string "ADAM: Sigh... CHARIZARD is too tired\n"
+	.string "to fly now.\p"
+	.string "ADAM: Guess I'll be here for a while.$"
+	
