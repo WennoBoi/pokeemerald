@@ -661,3 +661,6 @@ $(EVENTOBJGFXDIR)/effects/unknown_35.4bpp: %.4bpp: %.png
 
 $(EVENTOBJGFXDIR)/effects/unused_grass.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
+#custom
+$(EVENTOBJGFXDIR)/people/custom1.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4

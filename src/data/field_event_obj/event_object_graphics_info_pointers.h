@@ -238,6 +238,7 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
     [EVENT_OBJ_GFX_LINK_RS_MAY] =              &gEventObjectGraphicsInfo_RubySapphireMay,
     [EVENT_OBJ_GFX_LUGIA] =                    &gEventObjectGraphicsInfo_Lugia,
     [EVENT_OBJ_GFX_HOOH] =                     &gEventObjectGraphicsInfo_HoOh,
+    [EVENT_OBJ_GFX_CUSTOM1] =                  &gEventObjectGraphicsInfo_Custom1, //custom
 };
 
 const struct EventObjectGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
