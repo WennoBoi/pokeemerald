@@ -11968,4 +11968,18 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_May16),
         .party = {.NoItemDefaultMoves = sParty_May16},
     },
+    //custom
+    [TRAINER_CUSTOM1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_CUSTOM1,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_CUSTOM1,
+        .trainerName = _("ADAM"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .partySize = ARRAY_COUNT(sParty_Custom1),
+        .party = {.NoItemDefaultMoves = sParty_Custom1},
+    },
 };

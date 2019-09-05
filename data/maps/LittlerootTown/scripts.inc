@@ -1035,8 +1035,15 @@ LittlerootTown_Text_1E8DA2: @ 81E8DA2
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+
 Script_Custom1::
 	msgbox Text_Custom1, MSGBOX_NPC
+	getpartysize
+	compare VAR_RESULT, 0
+	goto_if_eq Script_Custom1_NoMons
+	msgbox Text_Custom1_Battle, MSGBOX_NPC
+	trainerbattle_no_intro TRAINER_CUSTOM1, Text_Custom1_Win
+	goto Script_Custom1_After
 	end
 
 Text_Custom1:
@@ -1051,4 +1058,31 @@ Text_Custom1:
 	.string "ADAM: Sigh... CHARIZARD is too tired\n"
 	.string "to fly now.\p"
 	.string "ADAM: Guess I'll be here for a while.$"
-	
+
+Text_Custom1_Battle:
+	.string "ADAM: Well, I don't have much to do\n"
+	.string "here, so let's battle! Don't worry,\l"
+	.string "I'll go easy on you!$"
+
+Text_Custom1_Win:
+	.string "ADAM: Hey, not bad! Not bad at all!$"
+
+Script_Custom1_NoMons::
+	msgbox Text_Custom1_NoMons, MSGBOX_NPC
+	end
+
+Text_Custom1_NoMons:
+	.string "ADAM: Hm... you have no POKéMON, huh?\p"
+	.string "ADAM: If you get any, let's battle!\n"
+	.string "Don't worry, I'll go easy on you!$"
+
+Script_Custom1_After::
+	msgbox Text_Custom1_After, MSGBOX_NPC
+	end
+
+Text_Custom1_After:
+	.string "ADAM: You've got great potential,\n"
+	.string "I can tell!\p"
+	.string "ADAM: You should compete in the\n"
+	.string "POKéMON LEAGUE! Aim for the top!\p"
+	.string "ADAM: Well, good luck then!$"

@@ -12434,3 +12434,16 @@ static const struct TrainerMonNoItemDefaultMoves sParty_May16[] = {
     .species = SPECIES_KYOGRE,
     }
 };
+//custom
+static const struct TrainerMonNoItemDefaultMoves sParty_Custom1[] = {
+    {
+    .iv = 0,
+    .lvl = 2,
+    .species = SPECIES_SHROOMISH,
+    },
+    {
+    .iv = 0,
+    .lvl = 3,
+    .species = SPECIES_CHARMANDER,
+    },
+};
