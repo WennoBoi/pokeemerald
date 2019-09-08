@@ -6266,6 +6266,8 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PIKE_QUEEN:
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONT;
+        case TRAINER_CLASS_CUSTOM1://custom
+            return BW2GYMLAST;
         default:
             return MUS_BATTLE20;
         }
